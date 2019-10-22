@@ -13,7 +13,7 @@ func TestDbConnection_ConnectionURL(t *testing.T) {
 		Host:       "localhost",
 		DisableSSL: true,
 	}
-	if conn.ConnectionURL() != "mysql://root:Afynfcvfujhbz@localhost/balancers?sslmode=disable" {
+	if conn.ConnectionURL() != "postgres://root:Afynfcvfujhbz@localhost/balancers?sslmode=disable" {
 		t.Error("Unexpected connection string")
 	}
 }
